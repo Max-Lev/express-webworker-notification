@@ -1,0 +1,12 @@
+//- -var list = ['1','2','3']
+html    
+    head
+        //- bower:css
+        title jade title
+    body(class="mainContainer")
+        h1 Jade Title
+        p
+            h3 Sub Title      
+            ul
+                each val in list
+                    li= val

@@ -1,0 +1,5 @@
+.bowerrc: bower configurations
+
+jshit: code quality enforcments
+
+jscs: code style rules enforcments
