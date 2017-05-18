@@ -1,13 +1,18 @@
 {
   "extends": "../tsconfig.json",
-  "compilerOptions":
-  {
+  "compilerOptions": {
     "outDir": "../out-tsc/app",
     "module": "es2015",
     "baseUrl": "",
-    "types": ["node"],
-    "target": ["es6","es6","dom"],
-    "allowJs":true
+    "types": [
+      "node"
+    ],
+    "target": [
+      "es6",
+      "es6",
+      "dom"
+    ],
+    "allowJs": true
   },
   "exclude": [
     "test.ts",

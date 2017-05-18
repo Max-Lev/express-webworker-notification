@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
+import { BooksListComponent } from './components/books-list/books-list.component';
 //import { myworker} from './worker.js';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BooksListComponent
   ],
   imports: [
     BrowserModule,

@@ -7,8 +7,11 @@ var path = require('path');
 //express uses 'use' as first:
 //searches for static assets
 app.use(express.static('public'));
-app.use(express.static('src/views'));
-app.set('views', './src/views');
+
+app.use(express.static('server-src/views'));
+
+app.set('views', './server-src/views');
+
 app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Headers',
@@ -29,7 +32,7 @@ app.post('/getBooks',function(req,res,next){
 app.get('/getBooks', function (req, res, next) {
 
     var options = {
-        root: __dirname + '/src/assets',
+        root: __dirname + '/server-src/assets',
         headers: {
             amount: 60
         }
@@ -46,7 +49,7 @@ app.get('/getBooks', function (req, res, next) {
 app.get('/second', function (req, res, next) {
 
     var options = {
-        root: __dirname + '/src/views/',
+        root: __dirname + '/server-src/views/',
         dotfiles: 'deny',
         headers: {
             'x-timestamp': Date.now(),
